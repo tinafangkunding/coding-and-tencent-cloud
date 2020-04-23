@@ -37,7 +37,7 @@ CODING Devops 与腾讯云 Serverless Framework 合作共同打造从需求计�
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/2%E3%80%81%E5%9C%A8%20Coding%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20Serverless%20Demo%20%7C%20%E6%96%B0%E5%BB%BA%E8%8C%83%E4%BE%8B%E9%A1%B9%E7%9B%AE1.png)
 
-创建项目时需要进行腾讯云授权，目前支持「扫码临时授权」和「云 API 密钥授权」
+创建项目时需要进行腾讯云授权，目前支持「扫码临时授权」和「云 API 密钥授权」，权限及云 API 秘钥的配置可以参考[配置文档](https://cloud.tencent.com/document/product/1154/43006)。
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/2%E3%80%81%E5%9C%A8%20Coding%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20Serverless%20Demo%20%7C%20%E6%96%B0%E5%BB%BA%E8%8C%83%E4%BE%8B%E9%A1%B9%E7%9B%AE2.png)
 
@@ -66,15 +66,13 @@ Cloud Studio 内部集成了 **Serverless Component**，支持一键生成运行
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/1%E3%80%81%E5%9C%A8%20VS%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20Serverless%20Demo%20%7C%20%E8%BF%90%E8%A1%8C%20Demo.png)
 
-
+Serverless Component 简介及命令行支持请参考 [Github 项目说明](https://github.com/serverless/components/blob/master/README.cn.md)。
 
 ### 使用腾讯云资源（待补充）
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/4%E3%80%81%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AD%98%E5%82%A8%E6%A1%B6%E5%88%97%E8%A1%A8.png)
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/4%E3%80%81%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AD%98%E5%82%A8%E6%A1%B6%E5%88%97%E8%A1%A8%E8%AF%A6%E6%83%85.png)
-
-
 
 
 # 常见问题
