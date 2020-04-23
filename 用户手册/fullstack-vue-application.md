@@ -3,14 +3,14 @@ CODING Devops 与腾讯云 Serverless Framework 合作共同打造从需求计�
 
 # 产品功能
 #### 一站式服务
-体验从**计划** -> **编码** -> **构建** -> **测试** -> **发布** -> **部署** -> **运营** -> **监控** Devops 全流程
+体验从**计划** -> **编码** -> **构建** -> **测试** -> **发布** -> **部署** -> **运营** -> **监控** Devops 全流程
 
-![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/devops%20%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%89%87.jpeg)
+![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/devops.jpg)
 
-#### 极速创建全栈 web 应用
+#### 极速创建全栈应用
 支持开发者在一分钟内创建 Serverless Framework 应用
 
-#### 丰富的资源可利用
+#### 可调度多方资源
 开发者可以同时使用 Coding、腾讯云、Serverless 多方提供的资源构建应用
 
 # 快速入门
@@ -54,13 +54,14 @@ CODING Devops 与腾讯云 Serverless Framework 合作共同打造从需求计�
 
 ### 在 Cloud Studio 中使用 Serverless Framework - Serverless Demo
 
-Cloud Studio 内部集成了 Serverless Component，支持一键生成运行在云端的 **Serverless Component 示例项目**
+> Cloud Studio 内部封装了安装环境，下载依赖，调用腾讯云资源等功能，仅对用户暴露图形化操作界面创建应用
+
+Cloud Studio 内部集成了 **Serverless Component**，支持一键生成运行在云端的 **Serverless Component 示例项目**。访问 [Cloud Studio](https://cloudstudio.net/)，选择新建「新建工作空间」 -> 「Serverless Framework」环境 -> 「Serverless Demo」即可初始化你的全站项目
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/1%E3%80%81%E5%9C%A8%20VS%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20Serverless%20Demo%20%7C%20%E4%BA%A7%E5%93%81%E5%85%A5%E5%8F%A3a.png)
 
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/1%E3%80%81%E5%9C%A8%20VS%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20Serverless%20Demo%20%7C%20%E4%BA%A7%E5%93%81%E5%85%A5%E5%8F%A3b.png)
-
 
 
 ![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/1%E3%80%81%E5%9C%A8%20VS%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20Serverless%20Demo%20%7C%20%E8%BF%90%E8%A1%8C%20Demo.png)
@@ -78,7 +79,5 @@ Cloud Studio 内部集成了 Serverless Component，支持一键生成运行在�
 
 # 常见问题
 
-#### 从 Coding 上拉取 **Serverless 全栈 WEB 应用（Vue.js）** 源码，无法正常运行，请参照仓库 README.md 在项目资源下新建 .env 文件
-
-![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/%E4%BB%8E%20Coding%20%E4%B8%8A%E6%8B%89%E5%8F%96%20Serverless%20%E5%85%A8%E6%A0%88%20WEB%20%E5%BA%94%E7%94%A8%EF%BC%88Vue.js%EF%BC%89%20%E6%BA%90%E7%A0%81%EF%BC%8C%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C.png)
+#### 1. 从 Coding 上拉取 **Serverless 全栈 WEB 应用（Vue.js）** 源码，无法正常运行，请参照仓库 README.md 在项目资源下配置 .env 文件；
 
