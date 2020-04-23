@@ -68,14 +68,33 @@ Cloud Studio 内部集成了 **Serverless Component**，支持一键生成运行
 
 Serverless Component 简介及命令行支持请参考 [Github 项目说明](https://github.com/serverless/components/blob/master/README.cn.md)。
 
-### 使用腾讯云资源（待补充）
+### 使用腾讯云资源
 
-![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/4%E3%80%81%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AD%98%E5%82%A8%E6%A1%B6%E5%88%97%E8%A1%A8.png)
+当前 Full Stack 项目使用如下云服务：
 
-![图片](https://static-serverless-coding-1255529448.cos.ap-shenzhen-fsi.myqcloud.com/4%E3%80%81%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AD%98%E5%82%A8%E6%A1%B6%E5%88%97%E8%A1%A8%E8%AF%A6%E6%83%85.png)
+- [x] **API 网关** - API 网关将会接收外部请求并且转发到 SCF 云函数中。
+- [x] **SCF 云函数** - 云函数将承载 Express.js 应用。
+- [x] **CAM 访问控制** - 该组件会创建默认 CAM 角色用于授权访问关联资源。
+- [x] **COS 对象存储** - 为确保上传速度和质量，云函数压缩并上传代码时，会默认将代码包存储在特定命名的 COS 桶中。此外，会通过 COS bucket 支持静态资源的托管。
 
+如果希望查看部署完成的 Serverless 应用和状态信息，可以通过 [Serverless Framework 控制台](https://serverless.cloud.tencent.com/) 进行查看和管理。 
 
 # 常见问题
 
 #### 1. 从 Coding 上拉取 **Serverless 全栈 WEB 应用（Vue.js）** 源码，无法正常运行，请参照仓库 README.md 在项目资源下配置 .env 文件；
+
+
+#### 2. Serverless Framework 报错“The appid is unavailable for legal reasons.” 如何处理？
+
+该报错是由于账户欠费，无法创建新的后付费资源所导致的。请您检查账户是否欠费，账户冲正后即可解决。
+
+#### 3. 遇到“Cannot get secretId/Key, your account could be sub-account or does not have access”报错如何处理？
+问题描述：完整的报错内容为 “ Cannot get secretId/Key, your account could be sub-account or does not have access, please check if SLS_QcsRole role exists in your account, and visit https://console.cloud.tencent.com/cam to bind this role to your account.” 
+
+解决方法：该报错为账户权限不足，可以参考 [账号和权限配置](https://cloud.tencent.com/document/product/1154/43006) 进行配置更新。
+
+
+更多的问题和反馈，可以参考 [Github 仓库 Issues](https://github.com/serverless-components?q=tencent)。
+
+
 
